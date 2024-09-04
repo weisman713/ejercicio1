@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       
+        section{
+            
+            position: relative;
+            background: linear-gradient(to bottom, #556EFB, #2E2BAE);
+            padding-top: 10px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 50px auto;
+            display: flex;
+            color: white;
+            align-items: center;
+            flex-direction: column;
+            
+            box-sizing: border-box;
+            
+            
+            
+        }
+        section + section{
+            background: #F2F0FE;
+            color: #000;
+        }
+        section + section .calificacion{
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        section + section button{
+            color: white;
+            background: #2E2BAE;
+        }
+        #informacion2 :last-child{
+            background: ;
+            color: black;
+        }
+        
+        header{
+            position: absolute;
+            top: -20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000; 
+            color: #fff; 
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        article{
+            padding-top: 30px;
+            
+        }
+        .caminando{
+            width: 200px;
+        }
+        
+        .pesos{
+            font-size: 3em;
+            vertical-align: middle;
+        }
+        .star-rating {
+        font-size: 1em;
+        color: gold;
+        }
+
+        .star-rating .empty {
+            color: lightgray; 
+        }
+        .calificacion{
+            width: 100%;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: grid;
+            grid-template-columns: auto auto; 
+             
+            grid-gap: 0;
+            justify-items: start;
+            padding: 20px 40px;
+            box-sizing: border-box;
+           
+
+            
+        }
+        .calificacion p+p{
+            justify-self: end;
+        }
+        .calificacion p{
+            font-size: 10px;
+        }
+        .calificacion p:nth-child(5) {
+  justify-self: start;
+}
+        
+        #informacion{
+            background: yellow;
+        }
+        .puntaje{
+            color: #ccc;
+        }
+        ul{
+            
+            list-style:none;
+            align-self: flex-start;
+            font-size: 17px;
+            padding-right: 70px;
+            
+            
+    
+        }
+        li {
+            display: flex;
+            align-items: flex-start;
+            }
+        ul li::before {
+            content: '✓ ';
+            margin-right: 10px; 
+        }
+        button{
+            background: white;
+            border: none;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            padding: 15px 30px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #2E2BAE;
+            transition: background-color 0.3s ease-in-out;
+        }
+        button:hover {
+  background-color: #d32c20; /* Cambia el color de fondo al pasar el ratón */
+}
+    </style>
+</head>
+<body>
+    <div id="informacion">
+        <section>
+            
+                <header>most popular</header>
+                <h3>Pro</h3>
+                <img class="caminando" src="/character-man-walk-png.webp" alt="tipo caminando">
+                <h5 class="puntaje">Total price</h5>
+                <h5>$<span class="pesos">2600</span></h5>
+                
+                
+                <article class="calificacion">
+                    <p>Hotel</p>
+                    <div class="star-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star empty">&#9733;</span>
+                    </div>
+                    <p>Sightseeing</p>
+                    <p class="puntaje">Half day</p>
+                    <p>Medical Services Quality</p>
+                    <p class="puntaje">8/10</p>
+                    
+                </article>
+                <ul>
+                    <li>
+                        visa
+                    </li>
+
+                    <li>
+                        airport transfer
+                    </li>
+                    <li>
+                        Hospital transfer
+                    </li>
+                    <li>
+                        welcome dinner
+                    </li>
+                    <li>
+                        personal attendant
+                    </li>
+                    <li class="puntaje">
+                        lunch and dinner in top nose restaurants
+                    </li>
+                </ul>
+                <button>select plan</button>
+            
+        </section>
+        <section>
+            
+            
+            <h3>Standar</h3>
+            <img class="caminando" src="/character-man-walk-png.webp" alt="tipo caminando">
+            <h5 class="puntaje">Total price</h5>
+            <h5>$<span class="pesos">2300</span></h5>
+            
+            
+            <article class="calificacion">
+                <p>Hotel</p>
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star empty">&#9733;</span>
+                    <span class="star empty">&#9733;</span>
+                </div>
+                <p>Sightseeing</p>
+                <p class="puntaje">Half day</p>
+                <p>Medical Services Quality</p>
+                <p class="puntaje">8/10</p>
+                
+            </article>
+            <ul>
+                <li>
+                    visa
+                </li>
+
+                <li>
+                    airport transfer
+                </li>
+                <li>
+                    Hospital transfer
+                </li>
+                <li>
+                    welcome dinner
+                </li>
+                <li class="puntaje">
+                    personal attendant
+                </li>
+                <li class="puntaje">
+                    lunch and dinner in top nose restaurants
+                </li>
+            </ul>
+            <button>select plan</button>
+        
+    </section>
+    </div>
+</body>
+</html>
