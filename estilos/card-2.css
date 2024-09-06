@@ -1,0 +1,11 @@
+.card2{
+    background: #F2F0FE;
+    color: #000;
+}
+.card2 .card_available{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.card2 button{
+    color: white;
+    background: #2E2BAE;
+}

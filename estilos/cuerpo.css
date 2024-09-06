@@ -1,0 +1,215 @@
+.cards{
+    width: auto;
+    height: auto;
+    
+    background: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px 10px;
+    
+    justify-items: center;
+        font-size: 2vh;
+        
+        align-items: stretch;
+        padding: 5vh 3vw;
+    box-sizing: border-box;
+    
+    
+
+}
+
+
+.card{         
+    position: relative;
+    padding-top: 1.5em;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 300px;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;  
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+.card_header{
+    position: absolute;
+    top: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000; 
+    color: #fff; 
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.card_img{
+    width: 25vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+.card_price{
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+.card_available{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0;
+    justify-items: start;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    font-size: 0.9em;
+   
+
+    
+}
+.card_available .card_available_column2{
+    justify-self: end;
+}
+
+.star-rating {
+    font-size: 1.5em;
+    color: gold;
+    }
+    
+.star-rating .empty {
+        color: lightgray; 
+}
+
+
+.card-light{
+    color: #ccc;
+}
+.card_list{
+    
+    list-style:none;
+    align-self: flex-start;
+    
+    
+    padding-left: 0.5rem;
+    
+    
+
+}
+.list_element {
+    display: flex;
+    align-items: flex-start;
+    }
+.card_list .list_element::before {
+    content: '✓ ';
+    margin-right: 1vh; 
+}
+.card_button{
+    background: white;
+    width: 70%;
+    height: 10vh;
+    max-width: 200px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #2E2BAE;
+    transition: background-color 0.3s ease-in-out;
+}
+.card_button:hover {
+background-color: #d32c20; 
+}
+.card_text{
+    flex-grow: 1;
+   flex-shrink: 1;
+   margin-top: 2vh;
+
+}
+
+@media(max-width:1300px){
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+}
+@media(max-width:950px){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:500px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-height:524px){
+    .cards{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        height: 90vh;
+        min-width: 60vw;
+        max-width: 100vw;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-auto-flow: column dense;
+        
+        justify-items: center;
+        font-size: 4vh;
+        
+        align-items: stretch;
+        padding: 5vh 3vw;
+        
+        
+    }
+    .card_img{
+        height: 25vh;
+        
+        width: auto;
+        
+        justify-self: stretch;  
+    }
+    .card_available{
+        height: auto;
+        width: auto;
+        grid-row-start: span 4;
+        row-gap: 0;
+        padding: auto;
+        
+    }
+    .card_button{
+        height: auto;
+        width: auto;
+        
+    }
+    .card_text{
+        flex-grow: 1;
+       flex-shrink: 1;
+
+    }
+    .card_list{
+        
+        justify-self: stretch;
+        font-size: 4vh;
+        grid-row-start: span 3;
+        
+    }
+
+}
